@@ -1,7 +1,8 @@
 /* General Styles */
 .container {
-  margin: 0 175px;
-  padding: 20px 0;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1300px; /* Adjust the maximum width of the container */
 }
 
 .section-container {
@@ -20,45 +21,80 @@ textarea {
   border-radius: 15px;
   color: white;
   font-size: 25px;
+  padding: 10px;
+  resize: vertical; /* Allow vertical resizing of textarea */
 }
 
 textarea:focus {
   outline: none;
 }
 
-/* Convert Button Styles */
-.btn-convert {
-  background-color: #5da0fd;
-  border: 1px solid #5095f8;
-  color: rgb(1, 1, 28);
-  padding: 14px;
-  width: 325px;
-  border-radius: 10px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* Button Styles */
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.btn-group {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line if needed */
+  justify-content: center; /* Center-align buttons horizontally */
+  margin-top: 20px; /* Add top margin to separate from textarea */
 }
 
-.btn-convert:hover {
+.btn {
+  margin: 5px; /* Add margin around each button */
+}
+
+.btn {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: rgb(1, 1, 28);
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
   background-color: rgb(1, 1, 28);
-  color: #5da0fd;
+  color: white;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-convert {
+  width: 100%; /* Full width for the convert button */
+  max-width: 325px; /* Limit the width of the convert button */
 }
 
 /* Audio Player Styles */
 .audio-container {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   background-color: rgb(1, 1, 28);
-  height: 100px;
+  height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.preview-container {
+  color: white;
+  /* display: flex;
+  flex-direction: column;
+} */
+}
 
 .audio-button {
   font-size: 45px;
-  border: transparent;
+  border: none;
   background-color: transparent;
   margin: 0 10px;
   cursor: pointer;
@@ -67,6 +103,7 @@ textarea:focus {
 
 .audio-button:disabled {
   opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .audio-button:hover {
@@ -80,8 +117,8 @@ textarea:focus {
 /* Progress Bar Styles */
 .progress-container {
   background-color: #ccc;
-  width: 100%;
-  height: 8px;
+  width: 60%;
+  height: 2.5px;
   margin: 0 0 10px;
 }
 
