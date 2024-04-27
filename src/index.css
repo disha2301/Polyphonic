@@ -5,7 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #747070;
+  background-image: url("../src/del.jpg"); /* Specify the path to your image relative to the public folder */
+  background-size: cover; /* Ensure the background image covers the entire viewport */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 
 code {

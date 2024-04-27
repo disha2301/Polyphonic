@@ -6,16 +6,20 @@
 
 .section-container {
   margin-top: 40px;
-  background-color: #fff;
+  background-color: transparent;
   padding: 40px;
   border-radius: 20px;
+  border: 2px solid white;
 }
 
 textarea {
   width: 100%;
   height: 300px;
+  background-color: transparent;
   border: 1px solid #ced4da;
   border-radius: 15px;
+  color: white;
+  font-size: 25px;
 }
 
 textarea:focus {
@@ -24,9 +28,9 @@ textarea:focus {
 
 /* Convert Button Styles */
 .btn-convert {
-  background-color: #5095f8;
+  background-color: #5da0fd;
   border: 1px solid #5095f8;
-  color: white;
+  color: rgb(1, 1, 28);
   padding: 14px;
   width: 325px;
   border-radius: 10px;
@@ -36,7 +40,8 @@ textarea:focus {
 }
 
 .btn-convert:hover {
-  background-color: #3e7fcf;
+  background-color: rgb(1, 1, 28);
+  color: #5da0fd;
 }
 
 /* Audio Player Styles */
@@ -44,7 +49,7 @@ textarea:focus {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: rgb(1, 1, 28);
   height: 100px;
   display: flex;
   justify-content: center;
