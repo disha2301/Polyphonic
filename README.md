@@ -29,5 +29,13 @@ This React application allows users to convert text to speech using Amazon Polly
 
 1. **Clone Repository**
    ```bash
-   git clone https://github.com/your-username/your-repository.git
-   cd your-repository
+   git clone https://github.com/disha2301/PolyPhonic.git
+   cd PolyPhonic
+2. **Install Dependencies**
+   ```bash
+   npm install
+3. **Set up AWS credentials**
+  - Create an AWS account if you haven't already.
+  - Set up AWS credentials and configure them in your environment or AWS SDK for JavaScript.
+
+
